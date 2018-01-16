@@ -14,7 +14,7 @@
 <meta property="og:url" content="http://yoursite.com/2018/01/16/Head First HTML与CSS观后感及知识点整理/index.html">
 <meta property="og:site_name" content="小博客">
 <meta property="og:description" content="观后感最近花了一周时间看完了《Head First HTML&amp;amp;CSS》，这本书在网上的口碑褒贬不一，有的说它生动形象、深入浅出，有的说它废话连篇、浪费时间。我觉得，嫌这本书废话多的大多是有一定的基础的人，站着说话不腰疼。当你是一个连什么是HTML都不知道的小白的时候，又想学习前端技术，这本书会是一本非常合适的入门书籍。 知识点整理1.认识HTML HTML和CSS是我们用来创建网页的语言。">
-<meta property="og:updated_time" content="2018-01-16T14:42:33.959Z">
+<meta property="og:updated_time" content="2018-01-16T14:50:25.519Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="小博客">
 <meta name="twitter:description" content="观后感最近花了一周时间看完了《Head First HTML&amp;amp;CSS》，这本书在网上的口碑褒贬不一，有的说它生动形象、深入浅出，有的说它废话连篇、浪费时间。我觉得，嫌这本书废话多的大多是有一定的基础的人，站着说话不腰疼。当你是一个连什么是HTML都不知道的小白的时候，又想学习前端技术，这本书会是一本非常合适的入门书籍。 知识点整理1.认识HTML HTML和CSS是我们用来创建网页的语言。">
@@ -161,12 +161,12 @@
 <li>开始标记可以有属性，结束标记的标记名前面有一个”/“，以明确这是结束标记。</li>
 <li>所有页面都要以html元素开头，其中要有head和body，网页的信息放在head里，body元素中的内容就是浏览器要展示的内容。</li>
 <li>大多数空白符（制表符、回车、空格）会被浏览器忽略，不过可以利用空白符让HTML更有可读性</li>
-<li>可以使用CSS指定HTML元素的特性，可以在<head>中的<style>中写CSS规则。</li>
+<li>可以使用CSS指定HTML元素的特性，可以在head中的style中写CSS规则。</li>
 </ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&lt;html&gt;</span><br><span class="line">    &lt;head&gt;</span><br><span class="line">        &lt;title&gt;网页标题&lt;/title&gt;</span><br><span class="line">        &lt;style&gt;CSS样式&lt;/style&gt;</span><br><span class="line">    &lt;/head&gt;</span><br><span class="line">    &lt;body&gt;</span><br><span class="line">        网页内容</span><br><span class="line">    &lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">&lt;html&gt;  </span><br><span class="line"></span><br><span class="line">    &lt;head&gt;</span><br><span class="line">        &lt;title&gt;网页标题&lt;/title&gt;</span><br><span class="line">        &lt;style&gt;CSS样式&lt;/style&gt;</span><br><span class="line">    &lt;/head&gt;</span><br><span class="line">    &lt;body&gt;</span><br><span class="line">        网页内容</span><br><span class="line">    &lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
 <h2 id="2-深入了解超文本"><a href="#2-深入了解超文本" class="headerlink" title="2.深入了解超文本"></a>2.深入了解超文本</h2><ul>
-<li>使用<a>元素可以从一个页面链接到另一个页面，<a>元素的href(hypertextreference)指定了链接的目标文件。</li>
-<li><a>元素的内容是链接的标签，文字或者图像都可以用作链接的标签，在浏览器上显示默认的会有一个下划线，表示这是一个链接可以单击。</li>
+<li>使用a元素可以从一个页面链接到另一个页面，a元素的href(hypertextreference)指定了链接的目标文件。</li>
+<li>a元素的内容是链接的标签，文字或者图像都可以用作链接的标签，在浏览器上显示默认的会有一个下划线，表示这是一个链接可以单击。</li>
 <li>单击一个链接时，浏览器会加载href属性中指定的web页面。</li>
 <li>可以链接到相同文件夹中的文件，也可以链接到不同文件夹中的文件。</li>
 <li>相对路径是以源Web页面为起点，指向要链接的文件的路径，就像在地图上一样，终点总是相对于起点。</li>
@@ -177,21 +177,15 @@
 <h2 id="3-构建模块（Web页面建设）"><a href="#3-构建模块（Web页面建设）" class="headerlink" title="3.构建模块（Web页面建设）"></a>3.构建模块（Web页面建设）</h2><ul>
 <li>开始创建网页之前要规划好Web页面的结构，规划页面时，首先设计大的块元素，然后用内联元素完善。</li>
 <li>要尽可能用元素告诉浏览器你的内容的含义，也就是==标签语义化==。</li>
-<li>元素分为块元素和内联元素，<p>、<blockquote>、<ol>等都是块元素，它们单独显示，默认的在其内容前后后换行。</li>
-<li><q>和<em>是内联元素</li>
-<li>需要插入自己的换行是，使用<br>元素，它是一个void元素，void元素没有内容。</li>
-<li>“空”元素也没有内容，不过它有开始和结束标记，如<p></p>。</li>
+<li>元素分为块元素和内联元素，p、blockquote、ol等都是块元素，它们单独显示，默认的在其内容前后后换行。</li>
+<li>q和em是内联元素</li>
+<li>需要插入自己的换行是，使用br元素，它是一个void元素，void元素没有内容。</li>
+<li>“空”元素也没有内容，不过它有开始和结束标记，如&lt;p&gt;&lt;/p&gt;。</li>
 <li>元素之间可以嵌套</li>
-<li>是用<ol><li>建立有序列表,使用<ul><li>建立无序列表，列表中也可以嵌套列表。</li>
+<li>使用ol,li建立有序列表,使用ul,li建立无序列表，列表中也可以嵌套列表。</li>
 <li>要对HTML中的特殊字符使用字符实体，如&gt;的字符实体是&amp;gt；</li>
 </ul>
-<h3 id="元素大杂烩"><a href="#元素大杂烩" class="headerlink" title="元素大杂烩"></a>元素大杂烩</h3><p><a>建立链接<br><q>短引用  </p>
-<p><blockquote>长引用  </p>
-<p><p>段落<br><code>用来显示计算机程序代码<br><em>表示强调，被强调的文字会斜体<br><time> 告诉浏览器这个内容是一个日期或时间  </p>
-<p><ul>无序列表  </p>
-<p><ol>有序列表  </p>
-<p><li>列表项<br><img>用于在页面中包含一个图像，src属性放图像地址<br><strong>表示特别强调，加粗<br><br>换行  </p>
-<p><pre>希望浏览器按你输入的方式原样显示文本</p>
+<h3 id="元素大杂烩"><a href="#元素大杂烩" class="headerlink" title="元素大杂烩"></a>元素大杂烩</h3><p>a建立链接<br>q短引用<br>blockquote长引用<br>p段落<br>code用来显示计算机程序代码<br>em表示强调，被强调的文字会斜体<br>time 告诉浏览器这个内容是一个日期或时间<br>ul无序列表<br>ol有序列表<br>li列表项<br>img用于在页面中包含一个图像，src属性放图像地址<br>strong表示特别强调，加粗<br>br换行<br>pre希望浏览器按你输入的方式原样显示文本</p>
 <h2 id="4-连接起来（将Web页面发布到互联网）"><a href="#4-连接起来（将Web页面发布到互联网）" class="headerlink" title="4.连接起来（将Web页面发布到互联网）"></a>4.连接起来（将Web页面发布到互联网）</h2><p>空</p>
 <h2 id="5-为你的页面增加图像"><a href="#5-为你的页面增加图像" class="headerlink" title="5.为你的页面增加图像"></a>5.为你的页面增加图像</h2><ul>
 <li>使用img元素在Web页面中放置图片</li>
@@ -208,10 +202,10 @@
 <h2 id="6-HTML标准及其他"><a href="#6-HTML标准及其他" class="headerlink" title="6.HTML标准及其他"></a>6.HTML标准及其他</h2><ul>
 <li>HTML5是当前的HTML标准，由万维网协会（World Wide Web Consotium，W3C）制定，HTML标准现在是一个“活的标准”，这说明这个标准会不断改变，不断加入新的特性。</li>
 <li>文档定义类型（doctype）用来告诉浏览器你使用的HTML版本  例如：&lt;!doctype html&gt;就告诉浏览器接下来是html代码</li>
-<li><head>元素中的<meta>标记告诉浏览器关于Web页面的额外信息，如内容类型和字符编码。<meta>标记中的charset属性告诉浏览器Web页面使用的字符编码，通常使用utf-8编码</li>
+<li><head>元素中的<meta>标记告诉浏览器关于Web页面的额外信息，如内容类型和字符编码。meta标记中的charset属性告诉浏览器Web页面使用的字符编码，通常使用utf-8编码</head></li>
 <li>alt属性是<img>元素中的必要属性</li>
 </ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&lt;!doctype html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">    &lt;head&gt;</span><br><span class="line">        &lt;meta charset=&quot;utf-8&quot;&gt;</span><br><span class="line">        &lt;title&gt;标题&lt;/title&gt;</span><br><span class="line">    &lt;/head&gt;</span><br><span class="line">    &lt;body&gt;</span><br><span class="line">    &lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">&lt;!doctype html&gt;</span><br><span class="line">&lt;html&gt;  </span><br><span class="line"></span><br><span class="line">    &lt;head&gt;</span><br><span class="line">        &lt;meta charset=&quot;utf-8&quot;&gt;</span><br><span class="line">        &lt;title&gt;标题&lt;/title&gt;</span><br><span class="line">    &lt;/head&gt;</span><br><span class="line">    &lt;body&gt;</span><br><span class="line">    &lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
 <h2 id="7-CSS入门"><a href="#7-CSS入门" class="headerlink" title="7.CSS入门"></a>7.CSS入门</h2><ul>
 <li>CSS包含一些简单的语句，称为规则</li>
 <li>每个规则为选择的一些HTML元素提供样式</li>
@@ -221,16 +215,16 @@
 <li>规则中所有属性和值放在一对大括号之间</li>
 <li>可以使用元素名作为选择器，来选择任意元素</li>
 <li>通过用逗号分隔元素名，可以一次选择多个元素</li>
-<li>要在HTML中包含一个样式，做容易的办法就是使用<style>标记</li>
-<li>对于HTML以及相当复杂的网站，可能要连接到一个外部样式，用<link>元素</li>
-<li>很多属性都能继承，如果为<body>元素设置一个可继承的属性，那么<body>的所有子元素都会继承这个属性</li>
+<li>要在HTML中包含一个样式，做容易的办法就是使用style标记</li>
+<li>对于HTML以及相当复杂的网站，可能要连接到一个外部样式，用link元素</li>
+<li>很多属性都能继承，如果为body元素设置一个可继承的属性，那么body的所有子元素都会继承这个属性</li>
 <li>通过为你想改变的元素创建一个更特定的规则，能覆盖该元素继承的属性</li>
 <li>可以在HTML结构中用class属性将元素归为一类</li>
 <li>通过在元素名和类名之间加一个”.”，可以选择该类中的一个特定元素</li>
 <li>使用“.classname”可以选择属于这个类的所有元素</li>
 <li>通过再class属性中放入多个类名，可以指定一个元素属于多个类，类名之间用空格分隔</li>
 </ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">&lt;!doctype html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">    &lt;head&gt;</span><br><span class="line">        &lt;meta charset=&quot;utf-8&quot;&gt;</span><br><span class="line">        &lt;title&gt;标题&lt;/title&gt;</span><br><span class="line">        &lt;style&gt;css样式&lt;/style&gt;</span><br><span class="line">        &lt;link type=&quot;text/css&quot; rel=&quot;stylesheet&quot; href=&quot;css文件路径&quot;&gt;</span><br><span class="line">    &lt;/head&gt;</span><br><span class="line">    &lt;body&gt;</span><br><span class="line">    </span><br><span class="line">    &lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">&lt;!doctype html&gt;</span><br><span class="line">&lt;html&gt;  </span><br><span class="line"></span><br><span class="line">    &lt;head&gt;</span><br><span class="line">        &lt;meta charset=&quot;utf-8&quot;&gt;</span><br><span class="line">        &lt;title&gt;标题&lt;/title&gt;</span><br><span class="line">        &lt;style&gt;css样式&lt;/style&gt;</span><br><span class="line">        &lt;link type=&quot;text/css&quot; rel=&quot;stylesheet&quot; href=&quot;css文件路径&quot;&gt;</span><br><span class="line">    &lt;/head&gt;</span><br><span class="line">    &lt;body&gt;</span><br><span class="line">    </span><br><span class="line">    &lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
 <h3 id="常见css属性"><a href="#常见css属性" class="headerlink" title="常见css属性"></a>常见css属性</h3><p>color  设置元素文本的字体颜色<br>font-weight  设置粗体<br>left 指定一个元素左边所在位置<br>top  控制元素顶部位置<br>line-height  文本元素行间距<br>padding  内边距<br>font-size  字体大小<br>border  边框<br>background-color 背景颜色<br>letter-spacing  字母之间间距<br>text-align  这个属性将文本居中对齐、左对齐或右对齐<br>font-style  使用这个属性设置斜体<br>list-style  改变列表项的外观<br>background-image 背景图片</p>
 <h2 id="8-增加字体和颜色样式"><a href="#8-增加字体和颜色样式" class="headerlink" title="8.增加字体和颜色样式"></a>8.增加字体和颜色样式</h2><ul>
 <li>CSS提供了很多属性对字体的外观进行控制，包括font-family、font-weight、font-size、font-style</li>
@@ -267,7 +261,7 @@
 <li>HTML中可以使用多个样式表，最后链接的样式最优先展示</li>
 </ul>
 <p>未完待续。。。</p>
-<h2 id="10-div与span"><a href="#10-div与span" class="headerlink" title="10.div与span"></a>10.div与span</h2><h2 id="11-布局与定位"><a href="#11-布局与定位" class="headerlink" title="11.布局与定位"></a>11.布局与定位</h2><h2 id="12-HTML5标记"><a href="#12-HTML5标记" class="headerlink" title="12.HTML5标记"></a>12.HTML5标记</h2><h2 id="13-表格与更多列表"><a href="#13-表格与更多列表" class="headerlink" title="13.表格与更多列表"></a>13.表格与更多列表</h2><h2 id="14-HTML表单"><a href="#14-HTML表单" class="headerlink" title="14.HTML表单"></a>14.HTML表单</h2></style></head></li></ul>
+<h2 id="10-div与span"><a href="#10-div与span" class="headerlink" title="10.div与span"></a>10.div与span</h2><h2 id="11-布局与定位"><a href="#11-布局与定位" class="headerlink" title="11.布局与定位"></a>11.布局与定位</h2><h2 id="12-HTML5标记"><a href="#12-HTML5标记" class="headerlink" title="12.HTML5标记"></a>12.HTML5标记</h2><h2 id="13-表格与更多列表"><a href="#13-表格与更多列表" class="headerlink" title="13.表格与更多列表"></a>13.表格与更多列表</h2><h2 id="14-HTML表单"><a href="#14-HTML表单" class="headerlink" title="14.HTML表单"></a>14.HTML表单</h2>
       
 
       
