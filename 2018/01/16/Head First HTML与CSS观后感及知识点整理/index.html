@@ -14,10 +14,12 @@
 <meta property="og:url" content="http://yoursite.com/2018/01/16/Head First HTML与CSS观后感及知识点整理/index.html">
 <meta property="og:site_name" content="小博客">
 <meta property="og:description" content="观后感最近花了一周时间看完了《Head First HTML&amp;amp;CSS》，这本书在网上的口碑褒贬不一，有的说它生动形象、深入浅出，有的说它废话连篇、浪费时间。我觉得，嫌这本书废话多的大多是有一定的基础的人，站着说话不腰疼。当你是一个连什么是HTML都不知道的小白的时候，又想学习前端技术，这本书会是一本非常合适的入门书籍。 知识点整理1.认识HTML HTML和CSS是我们用来创建网页的语言。">
-<meta property="og:updated_time" content="2018-01-17T09:15:25.404Z">
+<meta property="og:image" content="https://raw.githubusercontent.com/aofengdadigou/hello-world/master/h5.png">
+<meta property="og:updated_time" content="2018-01-17T12:12:58.054Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Head First HTML&amp;CSS读后感及知识点整理">
 <meta name="twitter:description" content="观后感最近花了一周时间看完了《Head First HTML&amp;amp;CSS》，这本书在网上的口碑褒贬不一，有的说它生动形象、深入浅出，有的说它废话连篇、浪费时间。我觉得，嫌这本书废话多的大多是有一定的基础的人，站着说话不腰疼。当你是一个连什么是HTML都不知道的小白的时候，又想学习前端技术，这本书会是一本非常合适的入门书籍。 知识点整理1.认识HTML HTML和CSS是我们用来创建网页的语言。">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/aofengdadigou/hello-world/master/h5.png">
   
     <link rel="alternative" href="/atom.xml" title="小博客" type="application/atom+xml">
   
@@ -276,8 +278,46 @@
 <li>一个元素只能有一个id，不过它可是属于多个类</li>
 <li>HTML中可以使用多个样式表，最后链接的样式最优先展示</li>
 </ul>
-<p>未完待续。。。</p>
-<h2 id="10-div与span"><a href="#10-div与span" class="headerlink" title="10.div与span"></a>10.div与span</h2><h2 id="11-布局与定位"><a href="#11-布局与定位" class="headerlink" title="11.布局与定位"></a>11.布局与定位</h2><h2 id="12-HTML5标记"><a href="#12-HTML5标记" class="headerlink" title="12.HTML5标记"></a>12.HTML5标记</h2><h2 id="13-表格与更多列表"><a href="#13-表格与更多列表" class="headerlink" title="13.表格与更多列表"></a>13.表格与更多列表</h2><h2 id="14-HTML表单"><a href="#14-HTML表单" class="headerlink" title="14.HTML表单"></a>14.HTML表单</h2>
+<h2 id="10-div与span"><a href="#10-div与span" class="headerlink" title="10.div与span"></a>10.div与span</h2><ul>
+<li>div元素是一个块元素，用于将相关的元素归组在一起，放在逻辑区中</li>
+<li>使用嵌套div元素为文件增加更多结构，这有利于保证结构清晰或者方便增加样式。不过除非确实需要，否则不要过多的增加结构</li>
+<li>可以个div增加样式，如边框，宽度</li>
+<li>一个元素的总宽度是内容区宽度+内边距+边框+外边距宽度</li>
+<li>可以使用子孙选择器来精确定位嵌套在其他元素中的元素，例如： div e{。。。}</li>
+<li>span是内联元素，它用于将相关内联元素和文本归组在一起</li>
+<li>伪类：常用与a标签，但不仅限a标签。：link对应未访问的链接 ：visited对应已访问的链接 ：hover对应悬停状态</li>
+<li>css选择器有特定性，特定性强的会覆盖特定性弱的，id选择器特定性可以用100衡量，那么类、伪类选择器为10，元素名作为选择器特定性仅为1<h2 id="11-布局与定位"><a href="#11-布局与定位" class="headerlink" title="11.布局与定位"></a>11.布局与定位</h2></li>
+<li>浏览器使用流在页面中放置元素，块元素从上向下流，各元素之间有个换行，默认的每块元素会占浏览器窗口的整个宽度</li>
+<li>内联元素在块元素内部从左上方流向右下方，如果需要多行，浏览器会自动换行，再垂直方向上扩展外围块元素来包含这些内联元素</li>
+<li>正常页面流中上下相邻的两个块元素的外边距会产生折叠，取最大外边距的大小。</li>
+<li>浮动元素会从正常流中取出，浮动到左边或者右边，并处在页面流之上，不会影响正常的页面流，不过内联元素会考虑浮动元素的边界，围绕着这个浮动元素，浮动元素必须有宽度</li>
+<li>clear属性用来指定一个块元素的左边或者右边或者两边不能有浮动元素。</li>
+<li>流体布局是指扩展浏览器窗口时，页面中的内容会扩展以适应页面</li>
+<li>冻结布局是指，页面内容的宽度是固定的，不会随浏览器窗口大小的改变而扩展或收缩</li>
+<li>凝胶布局是指，页面内容宽度是固定的，但是外边距会随着浏览器窗口扩展或收缩小，凝胶布局通常会把内容居中</li>
+<li>定位position属性可以设置四个值： 默认static（静态）、absolute（绝对）、relative（相对）和fixed（固定）</li>
+<li>静态定位将元素放在正常的流中；绝对定位是将元素完全从页面流中取出，允许指定一个绝对位置，这是相对于离它最近的父元素指定的；相对定位是相对于外围包含元素来定位，元素仍在正常流中，然后按照指定的量偏移；固定定位则是把元素固定在相对于浏览器窗口的一个特定的位置。使用绝对、相对和固定定位时可以使用top、left、right、bottom指定元素位置。</li>
+<li>绝对定位的元素可以使用z-index属性来分层放置，使一个元素在另一个元素上面，z-index越大，层次越高（在屏幕上里你越近）</li>
+</ul>
+<h2 id="12-HTML5标记"><a href="#12-HTML5标记" class="headerlink" title="12.HTML5标记"></a>12.HTML5标记</h2><ul>
+<li>HTML5新增了很多新元素</li>
+<li>section、article、aside、nav、header、footer都可以帮助简历网页结构，并且与div相比更有语义化</li>
+<li>section用于给相关联的内容分组</li>
+<li>article用于类似博客帖子、论坛帖子和新闻报道等独立内容</li>
+<li>aside用于表示不作为页面重要内容的次要内容。如插图和边栏</li>
+<li>nav用于组织网站导航链接</li>
+<li>header将标题、logo和署名等通常放在页面最上方区域的内容组织在一起；footer将诸如文档信息、法律措辞和版权说明等通常放在页面或区块最下方的内容组织在一起</li>
+<li>time元素用来标记时间和日期</li>
+<li>div仍用于构建结构，构建那些HTML5元素不适合用的地方</li>
+<li>较早的浏览器不支持HTML5元素，除非能确保新元素对你的用户适用，否则不要贸然适用这些新元素</li>
+<li>video元素可以为页面增加视频</li>
+<li>视频编码是用来创建视频文件的编码，常用的编码有h.264、Vp8和Theora</li>
+<li>视频容器文件包含视频、音频和元数据。流行的容器格式有MP4、OGG和WebM</li>
+<li>要提供多个视频源文件，确保你的用户在浏览器中可以观看你的视频文件</li>
+</ul>
+<figure class="highlight plain"><figcaption><span>controls autoplay width</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"> </span><br><span class="line">	&lt;source src=&quot;video/1.mp4&quot; type=&apos;video/mp4; codecs=&quot;avcl.42E01E, mp4a.40.2&quot;&apos;&gt;    </span><br><span class="line">	&lt;source src=&quot;video/1.webm&quot; type=&apos;video/webm; codecs=&quot;vp8, vorbis&quot;&apos;&gt;</span><br><span class="line">	&lt;source src=&quot;video/1.ogg&quot; type=&apos;video/ogg; codecs=&quot;theora, vorbis&quot;&apos;&gt;</span><br><span class="line">	&lt;p&gt;sorry,your browser doesnt support the video element&lt;/p&gt;</span><br><span class="line">&lt;/video&gt;</span><br></pre></td></tr></table></figure>
+<p><img src="https://raw.githubusercontent.com/aofengdadigou/hello-world/master/h5.png" alt=""></p>
+<h2 id="13-表格与更多列表"><a href="#13-表格与更多列表" class="headerlink" title="13.表格与更多列表"></a>13.表格与更多列表</h2><h2 id="14-HTML表单"><a href="#14-HTML表单" class="headerlink" title="14.HTML表单"></a>14.HTML表单</h2>
       
 
       
